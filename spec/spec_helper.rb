@@ -7,6 +7,8 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
 ]
 SimpleCov.start
 
+require File.expand_path('spec/support/dotenv')
+
 Dir['./spec/support/**/*.rb'].each {|f| require f}
 
 RSpec.configure do |config|
